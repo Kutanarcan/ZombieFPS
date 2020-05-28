@@ -47,7 +47,7 @@ public class BodyPart : MonoBehaviour
         else
             audioSource.PlayOneShot(lastBloodSoundToPlay);
 
-        GameObject tmp = Instantiate(bloodEffect, position, rotation);
-        Destroy(tmp, 1f);
+        GameObject tmp = ObjectPooler.Instance.SpawnPoolObject(bloodEffect.name, position, rotation);
+        ObjectPooler.Instance.ReturnToPool(tmp.name, tmp, 1f);
     }
 }

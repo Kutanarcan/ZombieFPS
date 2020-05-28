@@ -1,5 +1,296 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &118944831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 118944832}
+  - component: {fileID: 118944834}
+  - component: {fileID: 118944833}
+  - component: {fileID: 118944835}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &118944832
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118944831}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.000013214}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 804097833}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 313}
+  m_SizeDelta: {x: 762.9, y: 156.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &118944834
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118944831}
+  m_CullTransparentMesh: 0
+--- !u!114 &118944833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118944831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'BEHIND YOU
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 671f2761b7ebbe94ca2d95ebe07341db, type: 2}
+  m_sharedMaterial: {fileID: 5008740900880906691, guid: 671f2761b7ebbe94ca2d95ebe07341db,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278226687
+  m_fontColor: {r: 1, g: 0.55868834, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 72
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 514
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 118944833}
+    characterCount: 11
+    spriteCount: 0
+    spaceCount: 2
+    wordCount: 2
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 1
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!95 &118944835
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118944831}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 576c763cc2dfe1940b3005023963dfc0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &804097832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 804097833}
+  - component: {fileID: 804097836}
+  - component: {fileID: 804097835}
+  - component: {fileID: 804097834}
+  - component: {fileID: 804097837}
+  m_Layer: 0
+  m_Name: PlayerWarnCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &804097833
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804097832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 118944832}
+  m_Father: {fileID: 6492080578643654155}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!223 &804097836
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804097832}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 6492080578244904934}
+  m_PlaneDistance: 1
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &804097835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804097832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 2048, y: 1024}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!114 &804097834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804097832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &804097837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804097832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13fc42815b782de42bb8d1481f6b3cc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  warnText: {fileID: 118944833}
 --- !u!1 &479905295908270657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,6 +1396,7 @@ GameObject:
   - component: {fileID: 479905295908270990}
   - component: {fileID: 479905295908270988}
   - component: {fileID: 479905295908270978}
+  - component: {fileID: 2010591410}
   m_Layer: 11
   m_Name: PortableMagnum
   m_TagString: Untagged
@@ -1188,6 +1480,9 @@ MonoBehaviour:
   shootPoint: {fileID: 2304700235365584082}
   spreadRate: 0.45
   recoilRate: 2
+  recoilRecoverAmount: 2
+  isActive: 0
+  weaponShopInfo: {fileID: 2010591410}
 --- !u!114 &479905295908270988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1213,6 +1508,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementRotationBuildUpSpeed: 10
+--- !u!114 &2010591410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479905295908270985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2e1267498432a40b0e209956112d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: 10
+  weaponCost: 350
+  weaponSprite: {fileID: 21300000, guid: 43485ea77950c8e41802170c9e02aa5f, type: 3}
+  ammoCostPerBullet: 5
 --- !u!1 &479905295908270987
 GameObject:
   m_ObjectHideFlags: 0
@@ -3626,6 +3937,7 @@ GameObject:
   - component: {fileID: 2304700235236219272}
   - component: {fileID: 2304700235236219274}
   - component: {fileID: 2304700235236219284}
+  - component: {fileID: 556536328}
   m_Layer: 11
   m_Name: Police9mm
   m_TagString: Untagged
@@ -3710,6 +4022,9 @@ MonoBehaviour:
   shootPoint: {fileID: 2304700235365584082}
   spreadRate: 0.3
   recoilRate: 1
+  recoilRecoverAmount: 2
+  isActive: 1
+  weaponShopInfo: {fileID: 556536328}
 --- !u!114 &2304700235236219274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3735,6 +4050,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementRotationBuildUpSpeed: 10
+--- !u!114 &556536328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2304700235236219287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2e1267498432a40b0e209956112d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: 0
+  weaponCost: 0
+  weaponSprite: {fileID: 21300000, guid: 6bbce60360c077f40a9a6902276bc743, type: 3}
+  ammoCostPerBullet: 2
 --- !u!1 &2304700235236219289
 GameObject:
   m_ObjectHideFlags: 0
@@ -5234,6 +5565,7 @@ GameObject:
   - component: {fileID: 1770819015779256401}
   - component: {fileID: 1777364379901275685}
   - component: {fileID: 1573081207578620653}
+  - component: {fileID: 416758080}
   m_Layer: 0
   m_Name: StovRifle
   m_TagString: Untagged
@@ -5318,6 +5650,9 @@ MonoBehaviour:
   shootPoint: {fileID: 2304700235365584082}
   spreadRate: 0.7
   recoilRate: 1
+  recoilRecoverAmount: 8
+  isActive: 0
+  weaponShopInfo: {fileID: 416758080}
 --- !u!114 &1777364379901275685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5343,6 +5678,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementRotationBuildUpSpeed: 10
+--- !u!114 &416758080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2968324564231487492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2e1267498432a40b0e209956112d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: 40
+  weaponCost: 1500
+  weaponSprite: {fileID: 21300000, guid: fe2ebeb39eb6e914baa2dca314579e7e, type: 3}
+  ammoCostPerBullet: 15
 --- !u!1 &2968324564231487494
 GameObject:
   m_ObjectHideFlags: 0
@@ -7533,7 +7884,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a65596d465e8b141b4798aa4c1aafbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 250
   playerBody: {fileID: 6492080578643654155}
 --- !u!1 &6492080578365592325
 GameObject:
@@ -7602,6 +7952,7 @@ Transform:
   - {fileID: 6492080577879449669}
   - {fileID: 6492080578244904929}
   - {fileID: 6492080578365592324}
+  - {fileID: 804097833}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8666,6 +9017,7 @@ GameObject:
   - component: {fileID: 6428850154897159497}
   - component: {fileID: 2953146995120368694}
   - component: {fileID: 5372867203190439975}
+  - component: {fileID: 267592245}
   m_Layer: 11
   m_Name: UMP45
   m_TagString: Untagged
@@ -8733,13 +9085,13 @@ MonoBehaviour:
   weapon: 30
   damageMap:
   - bodyPartType: 0
-    givenDamage: 27
+    givenDamage: 40
   - bodyPartType: 1
-    givenDamage: 18
+    givenDamage: 25
   - bodyPartType: 2
-    givenDamage: 7
+    givenDamage: 10
   - bodyPartType: 3
-    givenDamage: 7
+    givenDamage: 10
   fireRate: 0.15
   clipSize: 20
   maxAmmo: 80
@@ -8747,8 +9099,11 @@ MonoBehaviour:
   fireMode: 1
   reloadKey: 114
   shootPoint: {fileID: 2304700235365584082}
-  spreadRate: 0.7
+  spreadRate: 0.5
   recoilRate: 0.7
+  recoilRecoverAmount: 3
+  isActive: 0
+  weaponShopInfo: {fileID: 267592245}
 --- !u!114 &2953146995120368694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8774,6 +9129,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementRotationBuildUpSpeed: 10
+--- !u!114 &267592245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8398462788427684745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2e1267498432a40b0e209956112d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: 0
+  weaponCost: 1000
+  weaponSprite: {fileID: 21300000, guid: 23991b6843cc4bf4c8b41651dfcccc30, type: 3}
+  ammoCostPerBullet: 10
 --- !u!1 &8398462788427684747
 GameObject:
   m_ObjectHideFlags: 0
@@ -11503,6 +11874,7 @@ GameObject:
   - component: {fileID: 2257241438679775300}
   - component: {fileID: 8250120883766824226}
   - component: {fileID: 1635303091503783979}
+  - component: {fileID: 1672377559}
   m_Layer: 11
   m_Name: DefenderShotgun
   m_TagString: Untagged
@@ -11570,9 +11942,9 @@ MonoBehaviour:
   weapon: 50
   damageMap:
   - bodyPartType: 0
-    givenDamage: 30
+    givenDamage: 25
   - bodyPartType: 1
-    givenDamage: 20
+    givenDamage: 15
   - bodyPartType: 2
     givenDamage: 10
   - bodyPartType: 3
@@ -11586,6 +11958,9 @@ MonoBehaviour:
   shootPoint: {fileID: 2304700235365584082}
   spreadRate: 0.85
   recoilRate: 0.7
+  recoilRecoverAmount: 5
+  isActive: 0
+  weaponShopInfo: {fileID: 1672377559}
   ammoInsertSound: {fileID: 8300000, guid: a556142d6c3623f41b7d9bdecb3ac66d, type: 3}
 --- !u!114 &8250120883766824226
 MonoBehaviour:
@@ -11612,6 +11987,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db58cf3244b610a4c885324911557767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1672377559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8427185292650940020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2e1267498432a40b0e209956112d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: 50
+  weaponCost: 750
+  weaponSprite: {fileID: 21300000, guid: ca95849752921ed43aed8a3dc3ec75ef, type: 3}
+  ammoCostPerBullet: 10
 --- !u!1 &8427185292650940022
 GameObject:
   m_ObjectHideFlags: 0
@@ -13455,6 +13846,7 @@ GameObject:
   - component: {fileID: 7284213213442452327}
   - component: {fileID: 7425649167080163617}
   - component: {fileID: 5652580025898721199}
+  - component: {fileID: 1274209176}
   m_Layer: 11
   m_Name: Compact9mm
   m_TagString: Untagged
@@ -13522,9 +13914,9 @@ MonoBehaviour:
   weapon: 20
   damageMap:
   - bodyPartType: 0
-    givenDamage: 35
+    givenDamage: 45
   - bodyPartType: 1
-    givenDamage: 20
+    givenDamage: 30
   - bodyPartType: 2
     givenDamage: 10
   - bodyPartType: 3
@@ -13538,6 +13930,9 @@ MonoBehaviour:
   shootPoint: {fileID: 2304700235365584082}
   spreadRate: 0.5
   recoilRate: 0.7
+  recoilRecoverAmount: 3
+  isActive: 0
+  weaponShopInfo: {fileID: 1274209176}
 --- !u!114 &7425649167080163617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13563,6 +13958,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementRotationBuildUpSpeed: 10
+--- !u!114 &1274209176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8943538568139945543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2e1267498432a40b0e209956112d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: 0
+  weaponCost: 1250
+  weaponSprite: {fileID: 21300000, guid: cbc52590ae2d047469ba76985b09af57, type: 3}
+  ammoCostPerBullet: 12
 --- !u!1 &8943538568139945545
 GameObject:
   m_ObjectHideFlags: 0
@@ -14705,15 +15116,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
---- !u!4 &857514217070220742 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
-    type: 3}
-  m_PrefabInstance: {fileID: 858437023706806738}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &660202831850890376 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
+    type: 3}
+  m_PrefabInstance: {fileID: 858437023706806738}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &857514217070220742 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
     type: 3}
   m_PrefabInstance: {fileID: 858437023706806738}
   m_PrefabAsset: {fileID: 0}
@@ -14846,15 +15257,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
---- !u!4 &856232645385670894 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
-    type: 3}
-  m_PrefabInstance: {fileID: 859822775224335610}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &661731541087609248 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
+    type: 3}
+  m_PrefabInstance: {fileID: 859822775224335610}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &856232645385670894 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
     type: 3}
   m_PrefabInstance: {fileID: 859822775224335610}
   m_PrefabAsset: {fileID: 0}
@@ -14987,15 +15398,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
---- !u!198 &2106477024945234808 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
-    type: 3}
-  m_PrefabInstance: {fileID: 2304700234436607522}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2302667520263148086 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
+    type: 3}
+  m_PrefabInstance: {fileID: 2304700234436607522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2106477024945234808 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
     type: 3}
   m_PrefabInstance: {fileID: 2304700234436607522}
   m_PrefabAsset: {fileID: 0}

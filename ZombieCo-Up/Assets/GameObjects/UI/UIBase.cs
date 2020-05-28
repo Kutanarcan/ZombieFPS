@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,6 +23,7 @@ public static class UIEvents
     public static event System.Action<float> OnPlayerHealthChanged;
     public static event System.Action<int> OnMoneyChanged;
     public static event System.Action<bool> OnBuyMenuActivenessChanged;
+    public static event System.Action<int> OnKillCountChanged;
 
     public static void OnPlayerStatChangedFunc(int ammo, int fullAmmo, string weaponName)
     {
@@ -41,5 +43,10 @@ public static class UIEvents
     public static void OnBuyMenuActivenessChangedFunc(bool activeness)
     {
         OnBuyMenuActivenessChanged?.Invoke(activeness);
+    }
+
+    public static void OnKillCountChangedFunc(int newKillCount)
+    {
+        OnKillCountChanged?.Invoke(newKillCount);
     }
 }

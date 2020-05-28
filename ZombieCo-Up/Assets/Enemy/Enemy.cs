@@ -29,8 +29,9 @@ public class Enemy : MonoBehaviour
     bool isAttacking;
     float speed;
     float angularSpeed;
+    float backPivotAmount;
 
-    const float BREATH_WAIT_SECONDS = 2f;
+    const float BREATH_WAIT_SECONDS = 4f;
 
     void Awake()
     {
@@ -40,8 +41,6 @@ public class Enemy : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         EnemyDamageController = GetComponent<EnemyDamageController>();
         hitCollider = GetComponentsInChildren<Collider>();
-        target = GameObject.Find("Player");
-        playerHealth = target.GetComponent<PlayerHealth>();
         audioSource = GetComponent<AudioSource>();
         speed = agent.speed;
         angularSpeed = agent.angularSpeed;
@@ -70,32 +69,59 @@ public class Enemy : MonoBehaviour
         EnemyBehindPlayerIndicator();
     }
 
+    void OnEnable()
+    {        
+        
+        PlayerEvents.OnPlayerDead += PlayerEvents_OnPlayerDead;
+        target = GameObject.Find("Player");
+        playerHealth = target.GetComponent<PlayerHealth>();
+    }
+
+    private void PlayerEvents_OnPlayerDead()
+    {
+        ObjectPooler.Instance.ReturnToPool(gameObject.transform.name, gameObject);
+    }
+
     public void EnemyBehindPlayerIndicator()
     {
-        float distanceWithTarget = Vector3.Distance(target.transform.position, transform.position);
-
-        if (distanceWithTarget < 10f)
-        {
-            Vector3 a, b;
-            a = transform.forward;
-            b = target.transform.forward;
-            a = a.normalized;
-            b = b.normalized;
-
-            float backPivot = a.x * b.x + a.y * b.y + a.z * b.z;
-
-            if (backPivot > -0.5f)
-                PlayerController.Instance.PlayerWarn.ShowWarnText();
-            else
-                PlayerController.Instance.PlayerWarn.HideWarnText();
-        }
+        if (EnemyDamageController.IsDead)
+            GameManager.Instance.RemoveEnemyChecker(backPivotAmount);
         else
-            PlayerController.Instance.PlayerWarn.HideWarnText();
+        {
+            float distanceWithTarget = Vector3.Distance(target.transform.position, transform.position);
 
+            if (distanceWithTarget < 15f && distanceWithTarget > 2f)
+            {
+                Vector3 a, b;
+                a = transform.forward;
+                b = target.transform.forward;
+                a = a.normalized;
+                b = b.normalized;
+
+                GameManager.Instance.RemoveEnemyChecker(backPivotAmount);
+
+                backPivotAmount = a.x * b.x + a.y * b.y + a.z * b.z;
+                if (backPivotAmount > -0.5f)
+                    GameManager.Instance.AddEnemyChecker(backPivotAmount);
+            }
+            else
+                GameManager.Instance.RemoveEnemyChecker(backPivotAmount);
+        }
+    }
+
+    void OnDisable()
+    {
+        if (GameManager.Instance != null)
+            GameManager.Instance.RemoveEnemyChecker(backPivotAmount);
+
+        PlayerEvents.OnPlayerDead -= PlayerEvents_OnPlayerDead;
     }
 
     public void Dead()
     {
+        GameManager.Instance.KillCount++;
+        UIEvents.OnKillCountChangedFunc(GameManager.Instance.KillCount);
+
         audioSource.PlayOneShot(deadSound);
 
         EnemyDamageController.IsDead = true;
@@ -107,7 +133,7 @@ public class Enemy : MonoBehaviour
         }
 
         enemyAnimator.CrossFadeDeath();
-        Destroy(gameObject, 5f);
+        ObjectPooler.Instance.ReturnToPool(gameObject.transform.name, gameObject, 5f);
     }
 
     void HandleAttack()

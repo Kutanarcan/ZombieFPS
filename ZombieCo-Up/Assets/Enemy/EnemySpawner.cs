@@ -38,7 +38,7 @@ public class EnemySpawner : MonoBehaviour
 
             spawnTimer = Time.time + spawnRate;
 
-            Instantiate(zombiePrefab, spawnPoints[randSpawnIndex].position, spawnPoints[randSpawnIndex].rotation);
+            ObjectPooler.Instance.SpawnPoolObject(zombiePrefab.name, spawnPoints[randSpawnIndex].position, spawnPoints[randSpawnIndex].rotation);
         }
     }
 }

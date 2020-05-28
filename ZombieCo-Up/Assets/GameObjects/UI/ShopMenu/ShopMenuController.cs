@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -9,6 +10,8 @@ public class ShopMenuController : MonoBehaviour
     ShopMenuWeaponHolder shopMenuWeaponHolderPrefab;
     [SerializeField]
     GameObject weaponBuyPanel;
+    [SerializeField]
+    TextMeshProUGUI currentMoneyText;
 
     List<WeaponBase> weaponBases;
 
@@ -21,6 +24,7 @@ public class ShopMenuController : MonoBehaviour
     void InitializeWeaponShopPanel()
     {
         weaponBases = PlayerController.Instance.WeaponManager.weaponBases;
+        currentMoneyText.text = $"Current Money : {CashSystem.Instance.CurrentCash}";
 
         for (int i = 0; i < weaponBases.Count; i++)
         {
@@ -76,6 +80,8 @@ public class ShopMenuController : MonoBehaviour
 
     void UpdateWeaponBuy(WeaponBase weaponBase, WeaponShopInfo weaponShopInfo, ShopMenuWeaponHolder weaponUIHolder)
     {
+        currentMoneyText.text = $"Current Money : {CashSystem.Instance.CurrentCash}";
+
         weaponUIHolder.WeaponToBuyBTN.interactable = !weaponBase.IsActive;
 
         if (weaponBase.BulletsToBuy == 0) weaponUIHolder.WeaponAmmoToBuyBTN.interactable = false;
@@ -85,6 +91,8 @@ public class ShopMenuController : MonoBehaviour
 
     void UpdateAmmoBuy(WeaponBase weaponBase, WeaponShopInfo weaponShopInfo, ShopMenuWeaponHolder weaponUIHolder)
     {
+        currentMoneyText.text = $"Current Money : {CashSystem.Instance.CurrentCash}";
+
         weaponUIHolder.AmmoCostText.text = (weaponShopInfo.AmmoCostPerBullet * weaponBase.BulletsToBuy).ToString();
         if (weaponBase.BulletsToBuy == 0) weaponUIHolder.WeaponAmmoToBuyBTN.interactable = false;
         else weaponUIHolder.WeaponAmmoToBuyBTN.interactable = true;

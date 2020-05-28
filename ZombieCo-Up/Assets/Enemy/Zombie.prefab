@@ -1500,7 +1500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c3b70f4f56fc754bbc482156074f295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 150
 --- !u!114 &1472804698007662368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1528,7 +1528,7 @@ MonoBehaviour:
   headshotSounds:
   - {fileID: 8300000, guid: 3e9385e41becc3048bfc9fdf85ed2695, type: 3}
   - {fileID: 8300000, guid: ee991a367651d64478f155ef2982aeeb, type: 3}
-  killReward: 35
+  killReward: 30
   headShotBonusReward: 15
 --- !u!82 &4996838748594346904
 AudioSource:

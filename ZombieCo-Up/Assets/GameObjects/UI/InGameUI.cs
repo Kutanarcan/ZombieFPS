@@ -17,6 +17,8 @@ public class InGameUI : MonoBehaviour
     TextMeshProUGUI playerHealthText;
     [SerializeField]
     TextMeshProUGUI moneyText;
+    [SerializeField]
+    TextMeshProUGUI killCountText;
 
     [Header("Shop Menu")]
     [SerializeField]
@@ -29,6 +31,12 @@ public class InGameUI : MonoBehaviour
         UIEvents.OnPlayerStatChanged += UpdatePlayerStats;
         UIEvents.OnPlayerHealthChanged += UpdatePlayerHealth;
         UIEvents.OnMoneyChanged += UpdateMoney;
+        UIEvents.OnKillCountChanged += UIEvents_OnKillCountChanged;
+    }
+
+    private void UIEvents_OnKillCountChanged(int killCount)
+    {
+        killCountText.text = $"Enemy Kill Count : {killCount.ToString()}";
     }
 
     void Update()

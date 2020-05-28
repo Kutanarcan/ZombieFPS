@@ -222,8 +222,8 @@ public class WeaponBase : MonoBehaviour
                 }
                 else
                 {
-                    GameObject tmpSpark = Instantiate(sparkEffect, hitInfo.point, hitInfo.transform.rotation);
-                    Destroy(tmpSpark, 1.5f);
+                    GameObject tmpSpark = ObjectPooler.Instance.SpawnPoolObject(sparkEffect.name, hitInfo.point, hitInfo.transform.rotation);
+                    ObjectPooler.Instance.ReturnToPool(tmpSpark.name, tmpSpark, 1.5f);
                 }
             }
         }
@@ -281,7 +281,7 @@ public class WeaponBase : MonoBehaviour
         int bulletsToSub = (bulletsLeft >= bulletsToLoad) ? bulletsToLoad : bulletsLeft;
 
         bulletsLeft -= bulletsToSub;
-        bulletsInClip += bulletsToLoad;
+        bulletsInClip += bulletsToSub;
 
         UpdateUIStats();
     }

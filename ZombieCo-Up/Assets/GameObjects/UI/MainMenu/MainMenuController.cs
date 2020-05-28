@@ -1,23 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class MainMenuController : MonoBehaviour
 {
     [SerializeField]
     GameObject mainMenuPanel;
     [SerializeField]
-    GameObject optionMenuPanel;
-    
+    TextMeshProUGUI killCount;
+
+    void Awake()
+    {
+        killCount.text = $"Best Enemy Kill Count : {PlayerPrefs.GetInt("EnemyKillCount", 0).ToString()}";
+    }
+
     public void LoadGame()
     {
         SceneController.Instance.LoadNextScene();
-    }
-
-    public void OpenOptionMenu()
-    {
-        mainMenuPanel.SetActive(false);
-        optionMenuPanel.SetActive(true);
     }
 
     public void QuitGame()
